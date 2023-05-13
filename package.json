@@ -1,0 +1,78 @@
+{
+  "name": "graphql-mongodb-subscriptions",
+  "version": "1.0.0",
+  "description": "A graphql-subscriptions PubSub Engine using MongoDB",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjwheatley/graphql-mongodb-subscriptions.git"
+  },
+  "keywords": [
+    "graphql",
+    "mongodb",
+    "apollo",
+    "subscriptions"
+  ],
+  "author": "Matthew Wheatley",
+  "contributors": [
+    {
+      "name": "Matthew Wheatley",
+      "url": "https://github.com/mjwheatley"
+    },
+    {
+      "name": "David Yahalomi",
+      "url": "https://github.com/davidyaha"
+    },
+    {
+      "name": "Michał Lytek",
+      "url": "https://github.com/19majkel94"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjwheatley/graphql-mongodb-subscriptions.git/issues"
+  },
+  "homepage": "https://github.com/mjwheatley/graphql-mongodb-subscriptions.git",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "npm run coverage",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc-watch --noClear -p ./tsconfig.json",
+    "test:tests": "jest test/mongodb-pub-sub.test.ts",
+    "test:integration": "jest test/integration-tests.test.ts",
+    "coverage": "jest --coverage test/",
+    "prepare": "npm run build",
+    "prepublish": "npm run build",
+    "prepublishOnly": "npm run test"
+  },
+  "dependencies": {
+    "@mawhea/mongopubsub": "1.0.0"
+  },
+  "peerDependencies": {
+    "graphql-subscriptions": "^1.0.0 || ^2.0.0",
+    "mongodb": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^29.5.1",
+    "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.36.0",
+    "@typescript-eslint/parser": "^5.36.0",
+    "eslint": "8.22.0",
+    "graphql": "^15.7.2",
+    "graphql-subscriptions": "^2.0.0",
+    "mongoose": "^7.1.0",
+    "mongopubsub": "^1.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "tsc-watch": "^4.4.0",
+    "typescript": "^4.8.2"
+  },
+  "typings": "dist/index.d.ts",
+  "typescript": {
+    "definition": "dist/index.d.ts"
+  },
+  "files": [
+    "dist/"
+  ]
+}
