@@ -1,4 +1,5 @@
 import { MongodbPubSub } from '../src';
+import { Db } from 'mongodb';
 
 let listeners = [];
 
@@ -32,7 +33,7 @@ jest.mock('@mawhea/mongopubsub', () => {
   };
 });
 
-const mockMongoDb = jest.fn();
+const mockMongoDb: Db = jest.fn() as unknown as Db;
 const mockOptions = {
   connectionDb: mockMongoDb
 };
