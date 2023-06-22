@@ -59,7 +59,7 @@
     "@typescript-eslint/eslint-plugin": "^5.36.0",
     "@typescript-eslint/parser": "^5.36.0",
     "eslint": "8.22.0",
-    "graphql": "^15.7.2",
+    "graphql": "^16.7.1",
     "graphql-subscriptions": "^2.0.0",
     "mongoose": "^7.1.0",
     "mongopubsub": "^1.0.0",
