@@ -55,7 +55,7 @@
   "devDependencies": {
     "@types/graphql": "^14.5.0",
     "@types/jest": "^29.5.1",
-    "@types/node": "16.11.7",
+    "@types/node": "20.4.8",
     "@typescript-eslint/eslint-plugin": "^5.36.0",
     "@typescript-eslint/parser": "^5.36.0",
     "eslint": "8.22.0",
