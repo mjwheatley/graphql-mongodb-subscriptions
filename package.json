@@ -38,9 +38,9 @@
     "test": "npm run coverage",
     "lint": "eslint src --ext ts",
     "watch": "tsc-watch --noClear -p ./tsconfig.json",
-    "test:tests": "jest test/mongodb-pub-sub.test.ts",
-    "test:integration": "jest test/integration-tests.test.ts",
-    "coverage": "jest --coverage test/",
+    "test:unit": "jest unit",
+    "test:integration": "jest int",
+    "coverage": "jest --coverage unit",
     "prepare": "npm run build",
     "prepublish": "npm run build",
     "prepublishOnly": "npm run test"
